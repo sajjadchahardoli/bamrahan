@@ -1,0 +1,19 @@
+{
+  "name": "bamrahan",
+  "version": "1.0.0",
+  "description": "wordpress theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajjadchahardoli/bamrahan.git"
+  },
+  "author": "sajjad chahardoli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sajjadchahardoli/bamrahan/issues"
+  },
+  "homepage": "https://github.com/sajjadchahardoli/bamrahan#readme"
+}
