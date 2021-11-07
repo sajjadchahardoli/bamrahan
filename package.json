@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  },
+  "scripts": {
+    "build-tailwindcss": "postcss build ./assets/css/tailwind-config.css -o ./assets/css/tailwind.css"
+
+  }
+}
