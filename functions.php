@@ -22,3 +22,6 @@ function bamrahan_register_nav_menu(){
 	register_nav_menu('secondary','secondary Header Navigation Menu');
 }
 add_action('after_setup_theme','bamrahan_register_nav_menu');
+
+//Add custom logo support to your theme
+add_theme_support( 'custom-logo'); 
