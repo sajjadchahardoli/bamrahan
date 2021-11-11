@@ -25,3 +25,12 @@ add_action('after_setup_theme','bamrahan_register_nav_menu');
 
 //Add custom logo support to your theme
 add_theme_support( 'custom-logo'); 
+
+//Add class on li in nav
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
