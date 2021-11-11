@@ -12,4 +12,59 @@
     <?php wp_head() ?>
 </head>
 
-<body <?php body_class() ?> >
+<body <?php body_class() ?> dir="rtl">
+    <header class="w-full h-16 bg-white shadow">
+        <div class="flex justify-between items-center px-6">
+            <!-- profile -->
+            <div class="flex">
+                <div class="flex items-center">
+                    <div class="ml-4">
+                        <?php echo get_avatar(get_current_user_id(), 32, '', '', array('class' => 'rounded-full')) ?>
+                    </div>
+                    <div class="right-">
+                        <?php
+                        global $current_user;
+                        wp_get_current_user();
+                        echo $current_user->user_login;
+                        ?>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="">
+                        <?php wp_nav_menu(array(
+                            'theme_location' => 'secondary',
+                            'container' => false,
+                            'menu_class' => 'flex flex-col justify-center mx-5 absolute top-20 right-0 shadow rounded-md p-4'
+                        )) ?>
+                    </div>
+                </div>
+                <div>
+                    <nav class="">
+                        <?php wp_nav_menu(array(
+                            'theme_location' => 'primary',
+                            'container' => false,
+                            'menu_class' => 'flex justify-center items-center mx-5',
+                            'add_li_class'  => 'mx-2'
+                        )) ?>
+                    </nav>
+                </div> <!-- navigation -->
+            </div>
+
+
+            <div class="flex h-16 items-center">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </span>
+                <h1 class="font-bold mx-4"><?php bloginfo('name') ?></h1>
+                <?php if (function_exists('the_custom_logo')) {
+                    the_custom_logo();
+                } ?>
+            </div> <!-- logo and search -->
+
+        </div>
+    </header>
