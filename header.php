@@ -26,17 +26,17 @@
                 </div>
                 <!--End navbar brand -->
 
+                <!-- Start navigation -->
+                <nav class="flex h-16 item-center">
+                    <?php wp_nav_menu(array(
+                        'theme_location' => 'primary',
+                        'container' => false,
+                        'menu_class' => 'flex justify-center items-center mx-5',
+                        'add_li_class'  => 'mx-2'
+                    )) ?>
+                </nav>
+                <!-- End navigation  -->
 
-                <div class="flex item-center h-16">
-                    <nav class="">
-                        <?php wp_nav_menu(array(
-                            'theme_location' => 'primary',
-                            'container' => false,
-                            'menu_class' => 'flex justify-center items-center mx-5',
-                            'add_li_class'  => 'mx-2'
-                        )) ?>
-                    </nav>
-                </div> <!-- navigation -->
             </div>
 
 
