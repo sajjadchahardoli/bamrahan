@@ -40,3 +40,12 @@ function add_additional_class_on_li($classes, $item, $args) {
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+//Add class on a in nav
+function add_additional_class_on_a($classes, $item, $args) {
+    if(isset($args->add_a_class)) {
+        $classes[] = $args->add_a_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_a', 1, 3);
