@@ -2,6 +2,7 @@ const secondaryNav = document.getElementById('secondary-nav');
 const searchInput = document.getElementById('search-input');
 const searchElement = document.getElementById('close-search');
 const subMenu = document.getElementsByClassName('sub-menu');
+const menuMobile = document.getElementById('menu-mobile');
 
 
 
@@ -24,5 +25,9 @@ function closeSearch() {
 subMenu[0].parentElement.addEventListener("click", myFunction);
 function myFunction() {
     subMenu[0].classList.toggle('hidden');
+}
+
+function toggleMenu(){
+    menuMobile.classList.toggle('hidden');
 }
 
