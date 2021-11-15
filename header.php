@@ -12,8 +12,8 @@
     <?php wp_head() ?>
 </head>
 
-<body <?php body_class() ?> dir="rtl" class="box-border">
-    <header class="w-full h-16 bg-white shadow">
+<body <?php body_class() ?> dir="rtl" class=" ">
+    <header class="w-full h-16 bg-white shadow select-none box-border">
         <div class="flex justify-between items-center px-6">
             <div class="flex">
                 <!--Start navbar brand -->
@@ -21,7 +21,11 @@
                     <?php if (function_exists('the_custom_logo')) {
                         the_custom_logo();
                     } ?>
-                    <h1 class="font-bold mx-4"><?php bloginfo('name') ?></h1>
+                        <h1 class="font-bold text-xl mr-4 pl-5 border-l-2 relative z-10 select-none"><?php bloginfo('name') ?></h1>
+                    
+                    <svg class="absolute top-3 right-20 z-0" xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 55 53.409">
+                        <path id="Path_3975" data-name="Path 3975" d="M42.5,53.409h-30A12.5,12.5,0,0,1,0,40.909V21.159c0-6.9,4.75-10.25,8.75-12.25l24.5-8C47.75-3.091,55,6.8,55,17.159v23.75A12.5,12.5,0,0,1,42.5,53.409Z" fill="rgba(59, 130, 246, 0.5)" />
+                    </svg>
                 </div>
                 <!--End navbar brand -->
 
