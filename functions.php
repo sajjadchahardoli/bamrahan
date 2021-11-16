@@ -50,3 +50,6 @@ function add_additional_class_on_a($classes, $item, $args) {
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_a', 1, 3);
+
+// Support post thumbnails
+add_theme_support( 'post-thumbnails');
