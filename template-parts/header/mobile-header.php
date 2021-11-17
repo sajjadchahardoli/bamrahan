@@ -1,5 +1,5 @@
-<header class="w-full h-16 bg-white shadow select-none box-border px-6">
-        <div class="flex justify-between items-center">
+<header class="w-full h-16 bg-white shadow select-none box-border ">
+        <div class="flex justify-between items-center px-6">
             <div class="flex items-center"  onclick="toggleMenu()">
                 <i class="fas fa-bars">
                 </i>
@@ -14,8 +14,8 @@
             </div>
         </div>
 
-        <div class="hidden" id="menu-mobile">
-            <div class=" text-white mt-4 ">
+        <div class="w-full h-screen bg-white p-6 hidden relative" id="menu-mobile">
+            <div class="text-white pt-4 ">
                 <input type="text" placeholder="جستجو کنید" class="bg-indigo-100 text-black outline-none w-full py-2 pr-4 relative  rounded-md">
                 <span>
                     <i class="fas fa-search"></i>
