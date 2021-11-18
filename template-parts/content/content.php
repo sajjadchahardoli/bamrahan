@@ -8,10 +8,10 @@
                 }
                 ?>
             </div>
-            <?php the_title('<h1 class="entry-header text-xl font-bold " >', '</h1>') ?>
+            <?php the_title('<h1 class="entry-header text-xl font-bold m-2" >', '</h1>') ?>
 
         </header>
-        <div>
+        <div class="m-2">
             <?php the_excerpt() ?>
         </div>
     </div>
