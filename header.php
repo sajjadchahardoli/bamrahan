@@ -14,9 +14,9 @@
 
 <body <?php body_class() ?> dir="rtl" class=" ">
     <div class="hidden lg:flex">
-        <?php include 'wp-content/themes/bamrahan/template-parts/header/desktop-header.php' ?>
+        <?php get_template_part('/template-parts/header/desktop-header') ?>
     </div>
 
     <div class="flex lg:hidden">
-        <?php include 'wp-content/themes/bamrahan/template-parts/header/mobile-header.php' ?>
+        <?php get_template_part('/template-parts/header/mobile-header') ?>
     </div>
