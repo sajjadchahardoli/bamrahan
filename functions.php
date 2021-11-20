@@ -1,14 +1,6 @@
 <?php
-/*
-* Let WordPress manage the document title.
-* This theme does not use a hard-coded <title> tag in the document head,
-* WordPress will provide it for us.
-*/
-function bamrahan_setup(){
-	add_theme_support('title-tag');
-}
-add_action('after_setup_theme', 'bamrahan_setup');
 
+require_once WP_CONTENT_DIR . '/themes/bamrahan/inc/theme-support.php';
 
 function bamrahan_register_styles(){
 	wp_enqueue_style('tailwind', get_template_directory_uri() . '/assets/css/tailwind.css', array(), 'all');
@@ -30,8 +22,7 @@ function bamrahan_register_nav_menu(){
 }
 add_action('after_setup_theme','bamrahan_register_nav_menu');
 
-//Add custom logo support to your theme
-add_theme_support( 'custom-logo'); 
+
 
 //Add class on li in nav
 function add_additional_class_on_li($classes, $item, $args) {
@@ -50,6 +41,3 @@ function add_additional_class_on_a($classes, $item, $args) {
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_a', 1, 3);
-
-// Support post thumbnails
-add_theme_support( 'post-thumbnails');
