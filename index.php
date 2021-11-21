@@ -3,6 +3,9 @@
 <main>
     <div>
         <?php
+        echo do_shortcode('[smartslider3 slider="1"]');
+        ?>
+        <?php
         if (have_posts()) {
             while (have_posts()) {
                 the_post();
