@@ -1,6 +1,6 @@
-        <footer class="rounded-md shadow bg-white w-11/12 my-5 mx-auto">
+        <footer class="rounded-md shadow bg-white w-11/12 my-5 mx-auto p-6 pb-12 mb-12">
             <div class="flex ">
-                <div class="w-1/3 p-2">
+                <div class="w-1/3 p-2 flex flex-col justify-center items-center">
                     <div class="flex">
                         <div>
                             <?php if (function_exists('the_custom_logo')) {
@@ -24,7 +24,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="justify-center">
+                <div class="w-1/3 p-2 flex flex-col justify-center items-center">
                     <div>
                         دسترسی سریع
                     </div>
@@ -57,7 +57,19 @@
                         </div>
                     </div>
                 </div>
-                <div></div>
+                <div class="w-1/3 p-2 flex flex-col justify-center items-center">
+                    <div>ارتباط با ما</div>
+                    <div>توضحات تماس با ما</div>
+                    <div>
+                        <div>0900 000 0000</div>
+                        <div>0900 000 0000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-10/12 bg-white rounded-md shadow mx-auto -mb-20 ">
+                <p class="p-6 text-center">
+                    کپی رایت 
+                </p>
             </div>
         </footer>
         <?php wp_footer(); ?>
