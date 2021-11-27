@@ -1,6 +1,6 @@
         <footer class="rounded-md shadow bg-white w-11/12 my-5 mx-auto p-6 pb-12 mb-12">
-            <div class="flex ">
-                <div class="w-1/3 p-2 flex flex-col justify-center items-center">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/3 p-2 flex  flex-col md:items-center">
                     <div class="flex">
                         <div>
                             <?php if (function_exists('the_custom_logo')) {
@@ -24,11 +24,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="w-1/3 p-2 flex flex-col justify-center items-center">
+                <div class="w-full md:w-1/3 p-2 flex  flex-col md:items-center">
                     <div>
                         دسترسی سریع
                     </div>
-                    <div class="flex mx-auto">
+                    <div class="flex md:mx-auto">
                         <div>
                             <ul>
                                 <li>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-1/3 p-2 flex flex-col justify-center items-center">
+                <div class="w-full md:w-1/3 p-2 flex  flex-col md:items-center">
                     <div>ارتباط با ما</div>
                     <div>توضحات تماس با ما</div>
                     <div>
